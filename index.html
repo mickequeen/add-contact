@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Agenda-Contactos</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Contactos</a>
+      <div id="buttons" class="navbar-right">
+        <button type="button" class="btn btn-default navbar-btn" data-toggle="modal" data-target="#squarespaceModal">
+          <i class="fa fa-plus" aria-hidden="true"></i>
+        </button>
+
+        <button type="button" class="btn btn-default navbar-btn">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </button>
+      </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="modal fade" id="squarespaceModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+              <span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+              <h3 class="modal-title" id="lineModalLabel">Añadir contacto</h3>
+          </div>
+          <div class="modal-body">
+            <!-- content goes here -->
+            <form action="javascript:saveContact()">
+              <div class="form-group">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <label for="imputName">Nombre Contacto</label>
+                <input type="text" class="form-control" id="contactName" placeholder="Ingrese nombre">
+                <i class="fa fa-mobile" aria-hidden="true"></i>
+                <label for="phoneNumber">Número telefónico</label>
+                <input type="phone" class="form-control" id="PhoneNumber" placeholder="Ingrese número telefónico">
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                <label for="exampleInputEmail1">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ingrese correo electrónico">
+              </div>
+              <button type="submit" class="btn btn-default">Guardar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+
+
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="https://use.fontawesome.com/a5cf7a6c13.js"></script>
+</body>
+</html>

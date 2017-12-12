@@ -1,0 +1,28 @@
+
+
+*{
+	box-sizing: border-box;
+}
+.navbar{
+  padding: 0.5em;
+  background-color: #C5BFBF
+}
+
+#buttons{
+  margin-right: 5em;
+}
+
+#buttons i{
+  color: #fff;
+}
+
+.navbar-brand{
+  font-size: 2em;
+}
+
+.navbar-btn{
+  background-color: #FFC107;
+  border: none;
+  padding-left: 2em;
+  padding-right: 2em;
+}
